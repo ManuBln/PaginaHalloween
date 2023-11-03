@@ -13,30 +13,18 @@
 
     <header class="fixed-top">
 
-        <nav class="navbar navbar-expand-lg">
+        <nav class="cont_header navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="Index.html" style="width: 3%;"><img src="Imagenes/logoClabaza.png"
                         alt="Logo-lateral" style="width: 100%; height: 100%;"></a>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-
-                        <a class="fuente_home nav-link active" aria-current="page" href="#"
-                            onclick="botonHome()">Home</a>
-                        <a class="fuente_home nav-link" href="#" onclick="botonJuego()">Juego de Hallowen</a>
-                        <a class="fuente_home nav-link" href="#" onclick="botonRecetas()">Recetas de Halloween</a>
-                        <a class="fuente_home nav-link" href="#" onclick="botonCaramelos()">Caramelos de Halloween</a>
-                        <a class="fuente_home nav-link" href="#" onclick="botonVidio()">Vidio de Halloween</a>
-                        <a class="fuente_home nav-link" href="#" onclick="botonTrucoTrato()">Truco o Trato</a>
-
-
-
-
-
-                    </div>
-                </div>
+                <a class="fuente_home nav-link active" aria-current="page" href="#" onclick="botonHome()">Home</a>
+                <a class="fuente_home nav-link" href="#" onclick="botonJuego()">Juego de Hallowen</a>
+                <a class="fuente_home nav-link" href="#" onclick="botonRecetas()">Recetas de Halloween</a>
+                <a class="fuente_home nav-link" href="#" onclick="botonCaramelos()">Caramelos de Halloween</a>
+                <a class="fuente_home nav-link" href="#" onclick="botonVidio()">Vidio de Halloween</a>
+                <a class="fuente_home nav-link" href="#" onclick="botonTrucoTrato()">Truco o Trato</a>
             </div>
         </nav>
-
     </header>
 
     <main>
@@ -62,7 +50,8 @@
                         <img class="imagenes_home d-block mx-auto" src="Imagenes/home2.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item  w-10 h-10">
-                        <img class="imagenes_home img_home_3 d-block mx-auto" src="Imagenes/home3.jpg" alt="Third slide">
+                        <img class="imagenes_home img_home_3 d-block mx-auto" src="Imagenes/home3.jpg"
+                            alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -100,7 +89,8 @@
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title texto_pasteles">Tarta de Halloween</h5>
-                            <p class="card-text texto_pasteles">Harina de trigo, Azúcar, Huevo, Leche, Nata, Colorante natural,
+                            <p class="card-text texto_pasteles">Harina de trigo, Azúcar, Huevo, Leche, Nata, Colorante
+                                natural,
                                 Vainilla y Chocolate</p>
                             <a href="https://es-es.facebook.com/pasteleria.capricho.1/">Pasteleria Capricho El ejido</a>
                         </div>
@@ -115,7 +105,8 @@
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title texto_pasteles">Galletas de Gengibre</h5>
-                            <p class="card-text texto_pasteles">Harina de trigo, Azúcar, Huevo, Colorante natural, Almendras y
+                            <p class="card-text texto_pasteles">Harina de trigo, Azúcar, Huevo, Colorante natural,
+                                Almendras y
                                 Genjinre.</p>
                             <a href="https://es-es.facebook.com/pasteleria.capricho.1/">Pasteleria Capricho El ejido</a>
                         </div>
@@ -131,7 +122,8 @@
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title texto_pasteles">Huesitos de santo</h5>
-                            <p class="card-text texto_pasteles">Harina de almendras, Yema de huevo, Azúcar y Vainilla.</p>
+                            <p class="card-text texto_pasteles">Harina de almendras, Yema de huevo, Azúcar y Vainilla.
+                            </p>
                             <a href="https://es-es.facebook.com/pasteleria.capricho.1/">Pasteleria Capricho El ejido</a>
                         </div>
                     </div>
@@ -178,7 +170,7 @@
             <div class="vidio_container container">
                 <div class="img_truco" id="imageLeft">
                     <h2 class="blink">Truco</h2>
-                    <img  src="Imagenes/image.jfif" alt="Truco">
+                    <img src="Imagenes/image.jfif" alt="Truco">
                     <div class="info">
                         <p>Varias adolescentes habían ido a pasar la noche en casa de una amiga, aprovechando que sus
                             padres estaban de viaje. Cuando apagaron las luces se pusieron a hablar de un viejo al que
@@ -201,7 +193,7 @@
                 </div>
                 <div class="img_truco" id="imageRight">
                     <h2 class="blink">Trato</h2>
-                    <img   src="Imagenes/lol.jfif" alt="Trato">
+                    <img src="Imagenes/lol.jfif" alt="Trato">
                     <div class="info">
                         <p>Una adolescente está cuidando por primera vez a unos niños en una casa enorme y lujosa.
                             Acuesta a los niños en el piso de arriba, y, cuando apenas se ha sentado delante de la
@@ -229,21 +221,33 @@
         </div>
 
         <div id="vidio">
-            
-                <h1 class="titulo_vidio text-center">Bienvenido a la Noche de Halloween</h1>
-           
+
+            <h1 class="titulo_vidio text-center">Bienvenido a la Noche de Halloween</h1>
+
             <div class="video-container">
-                <video class="vidio_2" width="600" height="500" controls="true"  frameborder="0" allowfullscreen>
+                <video class="vidio_2" width="600" height="500" controls="true" frameborder="0" allowfullscreen>
                     <source src="mp4/video.mp4" type="video/mp4">
                 </video>
             </div>
-           
+
             <div class="historia">
                 <h2 class="titulo_vidio">La Leyenda de la Casa Embrujada</h2>
                 <hr>
-                <p class="texto_historia">Un clasico en los colegios mayores de Madrid que poco a poco se fue propagando por otros ambientes universitarios españoles. La historia cuenta que una chica joven esperaba el autobús nocturno en una parada del bus en la zona de Metropolitano, el núcleo más importante de colegios mayores de la capital. El lugar se caracteriza por estar rodeado de parques del campus universitario, que en conjunción con los edificios de las facultades vacías y la noche, era sin duda un escenario digno de una peli de terror. Mientras la chica esperaba a su autobús, por la zona llegaron una grupo de chicos de aspecto neonazi que comenzaron a molestarla. La situación acabó con ellos "dibujándola" la llamada sonrisa del payaso en la cara para que no pudiera gritar, porque su macabra intención era violarla. La dicho sonrisa no es más que un corte a cada lado de la comisura de los labios que evita que la victima pueda gritar para evitar desgarrarse aún más.
-        
-                Los hechos no pudieron ser contrastados, pero los rumores fueron tan insistentes que en 2003 se vivió una reunión de varios directores de colegios mayores para dilucidar cuánto de verdad había en la historia e intentar poner fin a la alarma que se extendió con un reguero de pólvora entre los jóvenes madrileños</p>
+                <p class="texto_historia">Un clasico en los colegios mayores de Madrid que poco a poco se fue propagando
+                    por otros ambientes universitarios españoles. La historia cuenta que una chica joven esperaba el
+                    autobús nocturno en una parada del bus en la zona de Metropolitano, el núcleo más importante de
+                    colegios mayores de la capital. El lugar se caracteriza por estar rodeado de parques del campus
+                    universitario, que en conjunción con los edificios de las facultades vacías y la noche, era sin duda
+                    un escenario digno de una peli de terror. Mientras la chica esperaba a su autobús, por la zona
+                    llegaron una grupo de chicos de aspecto neonazi que comenzaron a molestarla. La situación acabó con
+                    ellos "dibujándola" la llamada sonrisa del payaso en la cara para que no pudiera gritar, porque su
+                    macabra intención era violarla. La dicho sonrisa no es más que un corte a cada lado de la comisura
+                    de los labios que evita que la victima pueda gritar para evitar desgarrarse aún más.
+
+                    Los hechos no pudieron ser contrastados, pero los rumores fueron tan insistentes que en 2003 se
+                    vivió una reunión de varios directores de colegios mayores para dilucidar cuánto de verdad había en
+                    la historia e intentar poner fin a la alarma que se extendió con un reguero de pólvora entre los
+                    jóvenes madrileños</p>
             </div>
         </div>
 

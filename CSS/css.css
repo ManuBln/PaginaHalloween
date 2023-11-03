@@ -38,8 +38,8 @@
 }
 
 
-header {
-    padding: 1%;
+.cont_header {
+    padding: 2%;
     background-color: #1c1c1c;
 }
 
@@ -50,7 +50,7 @@ body {
 }
 
 #titulo {
-    margin-top: 7%;
+    margin-top: 10%;
 }
 
 .botonCarrusel {
