@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head class="masthead">
+    <title>JARWELIN</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/css.css">
+
+</head>
+
+<body>
+
+    <header class="fixed-top">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="Index.html" style="width: 3%;"><img src="Imagenes/logoClabaza.png"
+                        alt="Logo-lateral" style="width: 100%; height: 100%;"></a>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+
+                        <a class="fuente_home nav-link active" aria-current="page" href="#"
+                            onclick="botonHome()">Home</a>
+                        <a class="fuente_home nav-link" href="#" onclick="botonJuego()">Juego de Hallowen</a>
+                        <a class="fuente_home nav-link" href="#" onclick="botonRecetas()">Recetas de Halloween</a>
+                        <a class="fuente_home nav-link" href="#" onclick="botonCaramelos()">Caramelos de Halloween</a>
+                        <a class="fuente_home nav-link" href="#" onclick="botonVidio()">Vidio de Halloween</a>
+                        <a class="fuente_home nav-link" href="#" onclick="botonTrucoTrato()">Truco o Trato</a>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+
+        <h1 id="titulo" class="text-center mb-5">HALLOWEEN 2023</h1>
+
+
+
+        <div id="carrusel_home">
+
+            <div id="carouselExampleIndicators" class="carousel slide  mx-auto mt-5" data-ride="carousel">
+                <ol class="carousel-indicators ">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active  w-10 h-10">
+                        <img class="imagenes_home d-block mx-auto" src="Imagenes/home1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item  w-10 h-10">
+                        <img class="imagenes_home d-block mx-auto" src="Imagenes/home2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item  w-10 h-10">
+                        <img class="imagenes_home img_home_3 d-block mx-auto" src="Imagenes/home3.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+
+        </div>
+
+        <div id="juego" class="text-center mt-5">
+            <h2 class="font_texto_juego">¡Feliz Halloween! Haz clic en las calabazas.</h2>
+
+            <!-- Contenedor para el juego -->
+            <div class="game-container mx-auto mt-5 w-50" onclick="handleClick(event)">
+            </div>
+            <br>
+            <button class="btn btn-outline-danger bg-dark" onclick="startGame()">Comenzar Juego</button>
+
+        </div>
+
+        <div id="recetas" style="display: none;">
+
+            <h1 class="text-center mb-5 titulo_pasteles">Recetas de Pateles de Halloween</h1>
+            <div class="recetas card mb-3" style="max-width: 800px; max-height: 400px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="Imagenes/Pastel1.jfif" class="pasteles img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title texto_pasteles">Tarta de Halloween</h5>
+                            <p class="card-text texto_pasteles">Harina de trigo, Azúcar, Huevo, Leche, Nata, Colorante natural,
+                                Vainilla y Chocolate</p>
+                            <a href="https://es-es.facebook.com/pasteleria.capricho.1/">Pasteleria Capricho El ejido</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recetas card mb-3" style="max-width: 800px; max-height: 400px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="Imagenes/Pastel2 .jfif" class="pasteles img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title texto_pasteles">Galletas de Gengibre</h5>
+                            <p class="card-text texto_pasteles">Harina de trigo, Azúcar, Huevo, Colorante natural, Almendras y
+                                Genjinre.</p>
+                            <a href="https://es-es.facebook.com/pasteleria.capricho.1/">Pasteleria Capricho El ejido</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recetas card mb-3" style="max-width: 800px; max-height: 400px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="Imagenes/Paste3.jfif" class="pasteles img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title texto_pasteles">Huesitos de santo</h5>
+                            <p class="card-text texto_pasteles">Harina de almendras, Yema de huevo, Azúcar y Vainilla.</p>
+                            <a href="https://es-es.facebook.com/pasteleria.capricho.1/">Pasteleria Capricho El ejido</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="caramelos">
+            <section class="caramelos_cards product-cards">
+                <a href="https://www.amazon.es/Chupa-Chups-Original-Caramelo-Variados/dp/B08251PDDZ/ref=sxin_17_pa_sp_search_thematic_sspa?content-id=amzn1.sym.7caa558a-06b3-49a1-ab5e-034549c4ecf3%3Aamzn1.sym.7caa558a-06b3-49a1-ab5e-034549c4ecf3&crid=2MUQ0YQYS9W4V&cv_ct_cx=caramelos+halloween&keywords=caramelos+halloween&pd_rd_i=B08251PDDZ&pd_rd_r=02d1b32a-89cb-4c4d-808d-e8ef17f1d550&pd_rd_w=2rD06&pd_rd_wg=A25Gy&pf_rd_p=7caa558a-06b3-49a1-ab5e-034549c4ecf3&pf_rd_r=Y0NQAPHQJJPQ3PAY0FYE&qid=1699022426&rdc=1&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=cara%2Caps%2C113&sr=1-1-a1aca6a1-078c-4f7f-b084-1addcab873fb-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&psc=1"
+                    class="productos product-card" target="_blank">
+                    <img src="Imagenes/caramelo1.png" class="w-75" alt="Producto 1">
+                    <h2>Chupa Chups</h2>
+                    <p>Chupa Chups Original, Caramelo con Palo de Sabores Variados, Caja Regalo con Flower Bouquet de 19
+                        unidades y Lata de 16 unidades de 12 gr. </p>
+                    <span>Precio: $18,70</span>
+                </a>
+                <a href="https://www.amazon.es/Caramelos-Cerd%C3%A1n-Caramelo-Al%C3%A9rgenos-Cumplea%C3%B1os/dp/B075RFD1HR/ref=sr_1_16?crid=2MUQ0YQYS9W4V&keywords=caramelos+halloween&qid=1699022426&sprefix=cara%2Caps%2C113&sr=8-16"
+                    class="productos product-card" target="_blank">
+                    <img src="Imagenes/caramelo2.png" class="w-50" alt="Producto 2">
+                    <h2>El conde dracula</h2>
+                    <p>Caramelo con Palo El Conde Drácula Sabor Cereza | Caramelo Duro Relleno de Chicle Sin Gluten ni
+                        Alérgenos | Ideal para Fiestas y Cumpleaños | Bolsa de 200 Unidades</p>
+                    <span>Precio: $15,34</span>
+                </a>
+                <a href="https://www.amazon.es/Caramelo-Masticable-Chuches-Halloween-Golosinas/dp/B00X9ZIB3G/ref=sr_1_26?crid=2MUQ0YQYS9W4V&keywords=caramelos+halloween&qid=1699022426&sprefix=cara%2Caps%2C113&sr=8-26"
+                    class="productos product-card" target="_blank">
+                    <img src="Imagenes/caramelo3.png" class="w-50" alt="Producto 3">
+                    <h2>Sugus</h2>
+                    <p>Caramelo Masticable a Base de Zumo de Frutas, Chuches Halloween, Golosinas Halloween (1kg)</p>
+                    <span>Precio: $18,16</span>
+                </a>
+                <a href="https://www.amazon.es/s?k=caramelos+halloween&page=2&crid=2MUQ0YQYS9W4V&qid=1699022426&sprefix=cara%2Caps%2C113&ref=sr_pg_2"
+                    class="productos product-card" target="_blank">
+                    <img src="Imagenes/caramelo4.png" class="w-75" alt="Producto 4">
+                    <h2>Calabaza Halloween</h2>
+                    <p> Surtido de Dulces con Gominolas, Caramelos y Chicles</p>
+                    <span>Precio: $6,86</span>
+                </a>
+            </section>
+        </div>
+
+        <div id="trucoTrato">
+            <div class="vidio_container container">
+                <div class="img_truco" id="imageLeft">
+                    <h2 class="blink">Truco</h2>
+                    <img  src="Imagenes/image.jfif" alt="Truco">
+                    <div class="info">
+                        <p>Varias adolescentes habían ido a pasar la noche en casa de una amiga, aprovechando que sus
+                            padres estaban de viaje. Cuando apagaron las luces se pusieron a hablar de un viejo al que
+                            acababan de enterrar en un cementerio cercano. Se decía que lo habían enterrado vivo y que
+                            se le podía escuchar arañando el ataúd, intentando salir.</p>
+
+                        <p>Una de las chicas se burló de aquella idea, así que las otras la desafiaron a que se
+                            levantara y fuera a visitar la tumba. Como prueba de que había ido, tenía que clavar una
+                            estaca de madera sobre la tierra de la tumba. La chica se fue y sus amigas apagaron la luz
+                            otra vez y esperaron a que volviera.</p>
+
+                        <p>Pero pasó una hora, y otra más, sin que tuvieran noticias de su amiga. Se quedaron en la cama
+                            despiertas, cada vez más aterradas. Llegó la mañana y la chica no había aparecido. Aquel
+                            mismo día, los padres de la chica regresaron a casa y, junto al resto de padres, acudieron
+                            al cementerio. Encontraron a la chica tirada sobre la tumba… Muerta. Al agacharse para
+                            clavar la estaca en el suelo, había pillado también el bajo de su falda. Cuando intentó
+                            levantarse y no pudo, creyó que el viejo muerto la había agarrado. Murió del susto en el
+                            acto.</p>
+                    </div>
+                </div>
+                <div class="img_truco" id="imageRight">
+                    <h2 class="blink">Trato</h2>
+                    <img   src="Imagenes/lol.jfif" alt="Trato">
+                    <div class="info">
+                        <p>Una adolescente está cuidando por primera vez a unos niños en una casa enorme y lujosa.
+                            Acuesta a los niños en el piso de arriba, y, cuando apenas se ha sentado delante de la
+                            televisión, suena el teléfono. A juzgar por su voz, el que llama es un hombre. Jadea, ríe de
+                            forma amenazadora y pregunta: “¿Has subido a ver a los niños?”.</p>
+
+                        <p>La canguro cuelga convencido de que sus amigos le están gastando una broma, pero el hombre
+                            vuelve a llamar y pregunta de nuevo: “¿Has subido a ver a los niños?”. Ella cuelga a toda
+                            prisa, pero el hombre llama por tercera vez, y esta vez dice: “¡Ya me he ocupado de los
+                            niños, ahora voy a por ti!”. </p>
+
+                        <p>La canguro está verdaderamente asustada. Llama a la policía y denuncia las llamadas
+                            amenazadoras. La policía pide que, si vuelve a llamar, intente distraerle al teléfono para
+                            que les de tiempo a localizar la llamada.</p>
+
+                        <p>Como era de esperar, el hombre llama de nuevo a los pocos minutos. La canguro le suplica que
+                            la deje en paz, y así le entretiene. Él acaba por colgar. De repente, el teléfono suena de
+                            nuevo, y a cada timbrazo el tono es más alto y más estridente. En esta ocasión, es la
+                            policía, que le da una orden urgente: “¡Salga de la casa inmediatamente! ¡Las llamadas
+                            vienen del piso de arriba!”. </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="vidio">
+            
+                <h1 class="titulo_vidio text-center">Bienvenido a la Noche de Halloween</h1>
+           
+            <div class="video-container">
+                <video class="vidio_2" width="600" height="500" controls="true"  frameborder="0" allowfullscreen>
+                    <source src="mp4/video.mp4" type="video/mp4">
+                </video>
+            </div>
+           
+            <div class="historia">
+                <h2 class="titulo_vidio">La Leyenda de la Casa Embrujada</h2>
+                <hr>
+                <p class="texto_historia">Un clasico en los colegios mayores de Madrid que poco a poco se fue propagando por otros ambientes universitarios españoles. La historia cuenta que una chica joven esperaba el autobús nocturno en una parada del bus en la zona de Metropolitano, el núcleo más importante de colegios mayores de la capital. El lugar se caracteriza por estar rodeado de parques del campus universitario, que en conjunción con los edificios de las facultades vacías y la noche, era sin duda un escenario digno de una peli de terror. Mientras la chica esperaba a su autobús, por la zona llegaron una grupo de chicos de aspecto neonazi que comenzaron a molestarla. La situación acabó con ellos "dibujándola" la llamada sonrisa del payaso en la cara para que no pudiera gritar, porque su macabra intención era violarla. La dicho sonrisa no es más que un corte a cada lado de la comisura de los labios que evita que la victima pueda gritar para evitar desgarrarse aún más.
+        
+                Los hechos no pudieron ser contrastados, pero los rumores fueron tan insistentes que en 2003 se vivió una reunión de varios directores de colegios mayores para dilucidar cuánto de verdad había en la historia e intentar poner fin a la alarma que se extendió con un reguero de pólvora entre los jóvenes madrileños</p>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- FANTASMA -->
+        <div class="fantasma" style="left: 10%; animation-duration: 6s;"></div>
+
+        <!--FANTASMA-->
+        <div class="fantasma" style="left: 30%; animation-duration: 4s;"></div>
+
+        <!--FANTASMA-->
+        <div class="fantasma" style="left: 50%; animation-duration: 5s;"></div>
+
+        <!--FANTASMA-->
+        <div class="fantasma" style="left: 70%; animation-duration: 6s;"></div>
+
+        <!--FANTASMA-->
+        <div class="fantasma" style="left: 90%; animation-duration: 4s;"></div>
+
+    </main>
+
+    <footer>
+        <div id="contacto" class="container mt-5">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <h2 class="text-center footer_font" style="font-size: 250%;">Contactenos</h2>
+                    <form>
+                        <div class="form-group">
+                            <label class="footer_font" for="nombre" style="font-size: 150%;">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label class="footer_font" for="email" style="font-size: 150%;">Correo Electronico:</label>
+                            <input type="email" class="form-control" id="email"
+                                placeholder="Ingrese su correo electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="footer_font" for="mensaje" style="font-size: 150%;">Mensaje:</label>
+                            <textarea class="form-control" id="mensaje" rows="3" placeholder="Escriba su mensaje"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div>
+            <p class="text-center" style="color: aliceblue;">Proveedor Golosinas:
+                <a
+                    href="https://www.amazon.es/?tag=admarketpl0c0-21&ref=pd_sl_372417da1d68787ee8a9f55894f57c18bcb9379d0ab32ba0f7612e74&mfadid=adm">Amazon</a>
+                |
+                Proveedor de Pasteles <a href="https://es-es.facebook.com/pasteleria.capricho.1/">Pasteleria
+                    Capricho</a> | © 2023 Halloween.
+            </p>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="JS/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
